@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Pindah ke direktori
-cd ~/termux/cf
+cd ~/cf
 
 # Cek apakah cf-manager.py sudah running
 if pgrep -f "python cf-manager.py" > /dev/null; then
