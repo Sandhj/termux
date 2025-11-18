@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Pindah ke direktori
-cd ~/termux/sc
+cd ~/sc
 
 # Cek apakah cf-manager.py sudah running
 if pgrep -f "python sc-installer.py" > /dev/null; then
