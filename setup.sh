@@ -11,5 +11,7 @@ cd
 wget -q https://raw.githubusercontent.com/Sandhj/termux/main/run_cf.sh
 wget -q https://raw.githubusercontent.com/Sandhj/termux/main/run_sc.sh
 
-echo -e "*/1 * * * * bash ~/run_cf.sh" | crontab -
-echo -e "*/1 * * * * bash ~/run_sc.sh" | crontab -
+{
+  echo "*/1 * * * * bash ~/run_cf.sh"
+  echo "*/1 * * * * bash ~/run_sc.sh"
+} | crontab -
